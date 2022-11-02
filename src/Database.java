@@ -24,7 +24,7 @@ public class Database {
 	        stmt.close();
              
             //sql search
-            String selectSql = "select * from usertable where user = '"+ Username +"'";
+            String selectSql = ("select * from usertable where username = '"+ Username +"' and passwd = '"+Passwd+"';" );
             ResultSet rs = stmt.executeQuery(selectSql); //"select * from user"
             String username = "0";
 
